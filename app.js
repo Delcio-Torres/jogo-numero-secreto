@@ -8,7 +8,7 @@ function verificarChute() {
     if (numeroAleatorio == chute) {
       let tentativa = tentativas > 1 ? "tentativas" : "tentativa"
       alteraTitulo('h1', 'Você ganhou o jogo!!!');
-      alteraTitulo('p', `Quantidade de ${tentativa} = ${tentativas}`)
+      alteraTitulo('p', `Você acertou o nº ${chute} com ${tentativas} ${tentativa}`)
       document.getElementById('reiniciar').removeAttribute('disabled');
     }
     else {
