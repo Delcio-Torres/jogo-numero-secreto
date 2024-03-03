@@ -34,10 +34,10 @@ function alteraTitulo(tag, texto) {
 }
 
 function reiniciarJogo() {
-  numeroAleatorio = parseInt(Math.random() * 10 + 1);
+  numeroAleatorio = parseInt(Math.random() * 1024 + 1);
   tentativas = 1;
   limparCampo();
   alteraTitulo('h1', "Jogo do número secreto");
-  alteraTitulo('p', "Escolha um número entre 1 e 10");
+  alteraTitulo('p', "Escolha um número entre 1 e 1024");
   document.getElementById('reiniciar').setAttribute('disabled',true);
 }
